@@ -1,11 +1,11 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
 const MenuItemSchema = new Schema({
-    itemNumber: { type: Number, },
-    name: { type: String },
-    price: { type: Number }
+  itemNumber: Number,
+  name: String,
+  price: Number,
 });
 
-module.exports = mongoose.model("MenuItem", MenuItemSchema)
+module.exports = mongoose.model("MenuItem", MenuItemSchema);
